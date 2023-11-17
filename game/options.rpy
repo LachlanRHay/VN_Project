@@ -207,3 +207,6 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
+# LAYER
+init python:
+    renpy.add_layer("gameUI",above="master")

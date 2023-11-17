@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 280, in script call
+    call bar_display(prog_bar_hi, comp_txt_hi, bar_txt_hi)
+  File "game/script.rpy", line 197, in script
+    show barbg onlayer gameUI at bar_trans
+Exception: Trying to add something to non-existent layer 'gameUI'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 280, in script call
+    call bar_display(prog_bar_hi, comp_txt_hi, bar_txt_hi)
+  File "game/script.rpy", line 197, in script
+    show barbg onlayer gameUI at bar_trans
+  File "D:\Program\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\Program\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "D:\Program\renpy-8.1.3-sdk\renpy\exports.py", line 759, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "D:\Program\renpy-8.1.3-sdk\renpy\display\core.py", line 1213, in add
+    raise Exception("Trying to add something to non-existent layer '%s'." % layer)
+Exception: Trying to add something to non-existent layer 'gameUI'.
+
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.1.3.23091805
+VN_Project 1.0
+Fri Nov 17 21:28:25 2023
